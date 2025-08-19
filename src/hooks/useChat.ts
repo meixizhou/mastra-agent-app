@@ -5,7 +5,7 @@ import { Message } from '@/types'
 export const mastraClient = new MastraClient({
   baseUrl: import.meta.env.VITE_API_URL || 'xxx'
 })
-const weatherAgent = await mastraClient.getAgent('weatherAgent')
+const weatherAgent = mastraClient.getAgent('weatherAgent')
 
 // 生成当前的threadId，memory用的
 let mastraRandomID = localStorage.getItem('mwacId') || ''
