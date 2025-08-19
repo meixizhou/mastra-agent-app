@@ -3,7 +3,7 @@ import { MastraClient } from '@mastra/client-js'
 import { Message } from '@/types'
 
 export const mastraClient = new MastraClient({
-  baseUrl: import.meta.env.VITE_MATRAS_SERVER_API || 'https://mastra-agent.meixiz118.workers.dev'
+  baseUrl: import.meta.env.VITE_API_URL || 'xxx'
 })
 const weatherAgent = await mastraClient.getAgent('weatherAgent')
 
